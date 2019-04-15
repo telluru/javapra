@@ -2,7 +2,10 @@ import java.io.*;
 public class java5n1to4{
   public static void main(String[] args){
     //introduceOneself();
-    email("aaa","bbb");
+    //email("aaa","bbb");
+    System.out.println(calcTriangleArea(10.0,5.0));
+    System.out.println(calcCircleArea(5.0));
+
   }
   public static void introduceOneself(){
     System.out.println("名前を入力してください");
@@ -29,5 +32,12 @@ public class java5n1to4{
     System.out.println( "件名：無題");
     System.out.println( "本文：「"+text+"」");
   }
-
+  public static double calcTriangleArea(double bottom,double height){
+    double tArea = bottom*height/2;
+    return tArea;
+  }
+  public static double calcCircleArea(double radius){
+    double cArea = Math.pow(radius,2)*3.14;
+    return cArea;
+  }
 }

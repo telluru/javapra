@@ -1,7 +1,8 @@
 import java.io.*;
 public class java5n1to4{
   public static void main(String[] args){
-    introduceOneself();
+    //introduceOneself();
+    email("aaa","bbb");
   }
   public static void introduceOneself(){
     System.out.println("名前を入力してください");
@@ -18,4 +19,15 @@ public class java5n1to4{
       System.out.println(e);
     }
   }
+  public static void email(String title,String address,String text){
+    System.out.println( address+"に、以下のメールを送信しました");
+    System.out.println( "件名：「"+title+"」");
+    System.out.println( "本文：「"+text+"」");
+  }
+  public static void email(String address,String text){
+    System.out.println( address+"に、以下のメールを送信しました");
+    System.out.println( "件名：無題");
+    System.out.println( "本文：「"+text+"」");
+  }
+
 }
